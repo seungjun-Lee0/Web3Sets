@@ -1,0 +1,134 @@
+<!--
+테이블
+여러 종류의 데이터를 보기좋게 정리해서 이차원 형태의 표로 나타낸 것
+table 태그를 이용하여 표를 표현함
+표안의 행과 열은 th, tr, td등을 이용해서 표현함
+
+tr: table row, 테이블의 행을 표현할 때 사용
+th: table header, 테이블의 제목셀을 표현할 때 사용
+    자동으로 가운데 정렬과 진하게 속성이 지정
+td: table data, 테이블의 일반셀을 표현할 때 사용
+
+border : 테이블의 태두리 표시, 숫자는 굵기를 의미함
+cellspacing : 각 셀들 간의 간격 조정
+cellpadding : 셀과 셀안 텍스트 간의 간격 조정
+
+테이블에 의미 부여하기
+thead: 테이블의 제목행 영역을 정의
+tbody: 테이블의 본문행 영역을 정의
+tfoot: 테이블의 하단제목행 영역을 정의
+caption: 테이블의 제목을 표현하고 싶을 때 사용
+
+테이블 셀 합치기
+colspan : 열끼리 합칠 때 사용 (방향은 가로)
+rowspan : 행끼리 합칠 때 사용 (방향은 세로)
+
+-->
+<!doctype = html>
+<html lang="ko">
+    <head>
+
+    <meta charset="utf-8">
+    <title>테이블태그</title>
+
+    </head>
+
+    <body>
+
+        <h1>테이블태그</h1>
+        <h2>학생 테이블</h2>
+        <table border="1" cellspacing="0" cellpadding = "5">
+        <cation>표1-1 학생 테이블</cation>
+            <thead>
+            <tr>
+                <th>학번</th>
+                <th>이름</th>
+                <th>주소</th>
+                <th>생년월일</th>
+                <th>학과명</th>
+                <th>교수</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>201350050</td>
+                <td>김태희</td>
+                <td>경기도 고양시</td>
+                <td>1985.03.22</td>
+                <td>컴퓨터</td>
+                <td>교수</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2>학과 테이블</h2>
+        <table border="1" cellspacing="0" cellpadding = "5">
+        <cation>표1-2 학과 테이블</cation>
+            <thead>
+            <tr>
+                <th>학과명</th>
+                <th>전화번호</th>
+                <th>사무실 위치</th>
+                <th>학과장</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>컴퓨터공학</td>
+                <td>123-4567-8901</td>
+                <td>E동 2층</td>
+                <td>504</td>
+            </tr>
+            <tr>
+                <td>의상디자인</td>
+                <td>234-5678-9012</td>
+                <td>A동 1층</td>
+                <td>301</td>
+            </tr>
+            <tr>
+                <td>식품영양</td>
+                <td>345-6789-0123</td>
+                <td>F동 8층</td>
+                <td>556</td>
+            </tr>
+            <tr>
+                <td>철학</td>
+                <td>456-7890-1234</td>
+                <td>Z동 25층</td>
+                <td>504</td>
+            </tr>
+        </tbody>
+        </table>
+        <hr>
+        <h2>복잡한 표 다루기</h2>
+        <table border="1" cellspacing="0"width="350">
+            <tr height="35">
+                <td colspan="5">1</td>
+            </tr>
+            <tr height="35">
+                <td colspan="5">2</td>
+            </tr>
+            <tr height="35">
+                <td rowspan="3">3</td>
+                <td rowspan="3">4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+             <tr height="35">
+                <!--<td>1</td>-->
+                <td colspan="2">8</td>
+                <!--<td>3</td>-->
+                <td>9</td>
+            </tr>
+            <tr height="35">
+                <!--<td>1</td>-->
+                <td colspan="3">10</td>
+                <!--<td>3</td>-->
+                <!--<td>4</td>-->
+            </tr>
+        </table>
+    </body>
+
+</html>

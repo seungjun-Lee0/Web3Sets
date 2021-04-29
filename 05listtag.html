@@ -1,0 +1,125 @@
+<!--
+목록 다루기
+리스트 ; 여러 요소들을 일렬로 나열한 목록이나 명단을 의미
+html에서는 ul, ol, dl 이라는 태그로 표현가능
+
+또한, 웹페이지 내 메뉴를 정의할때나 상품 목록을 나타낼 때에도 사용함
+
+정의목록
+용어와 그 용어의 뜻을 나열할 때 사용함
+-->
+
+<!doctype = html>
+<html lang="ko">
+    <head>
+
+    <meta charset="utf-8">
+    <title>목록태그</title>
+
+    </head>
+
+    <body>
+
+        <h1>목록태그</h1>
+        <h2>순서없는 목록</h2>
+        <hr>
+        <h3>내가 좋아하는 음식 베스트 5</h3>
+        <ul> <!-- type = "disc"와 동일 -->
+            <li>음식1</li>
+            <li>음식2</li>
+            <li>음식3</li>
+            <li>음식4</li>
+            <li>음식5</li>
+        </ul>
+            <ul type = "square">
+            <li>음식1</li>
+            <li>음식2</li>
+            <li>음식3</li>
+            <li>음식4</li>
+            <li>음식5</li>
+        </ul>
+        <ul>
+            <li>분식
+                <ul>
+                    <li>라면
+                        <ul>
+                            <li>떡라면</li>
+                            <li>치즈라면</li>
+                            <li>매운라면</li>
+                        </ul>
+                    </li>
+                    <li>떡볶이
+                        <ul>
+                            <li>매운떡볶이</li>
+                            <li>치즈떡볶이</li>
+                            <li>라면떡볶이</li>
+                        </ul>
+                    </li>
+                    <li>오뎅
+                        <ul>
+                            <li>일반오뎅</li>
+                            <li>매운오뎅</li>
+                            <li>부산오뎅</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>순서있는 목록</h2>
+        <hr>
+        <h3>내가 좋아하는 음식 best 5</h3>
+        <ol>
+            <li>음식5</li>
+            <li>음식4</li>
+            <li>음식3</li>
+            <li>음식2</li>
+            <li>음식1</li>
+        </ol>
+        <ol type = "가">
+            <li>음식5</li>
+            <li>음식4</li>
+            <li>음식3</li>
+            <li>음식2</li>
+            <li>음식1</li>
+        </ol>
+        <ol>
+            <li>분식
+                <ol>
+                    <li>라면
+                        <ol>
+                            <li>떡라면</li>
+                            <li>치즈라면</li>
+                            <li>매운라면</li>
+                        </ol>
+                    </li>
+                    <li>떡볶이
+                        <ol>
+                            <li>매운떡볶이</li>
+                            <li>치즈떡볶이</li>
+                            <li>라면떡볶이</li>
+                        </ol>
+                    </li>
+                    <li>오뎅
+                        <ol>
+                            <li>일반오뎅</li>
+                            <li>매운오뎅</li>
+                            <li>부산오뎅</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <hr>
+        <dl>
+            <dt>WWW</dt>
+            <dd>www는 world wide web의 약자</dd>
+
+            <dt>HTML</dt>
+            <dd>html은 hypertext markup language의 약자</dd>
+
+            <dt>CSS</dt>
+            <dd>cascade style sheet의 약자</dd>
+        </dl>
+    </body>
+
+</html>
