@@ -135,6 +135,9 @@
             let reg3 =
                 /^[a-z](?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[!@#$-])[a-zA-Z\d!@#$-]{7,15}$/
 
+            let reg4 =
+                /^[a-z][A-Za-z0-9!@#$-]{7,15}$/
+
             document.write("<br>");
             document.write(reg3.test(data9));
             document.write(reg3.test(data10));
