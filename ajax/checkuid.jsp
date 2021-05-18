@@ -7,7 +7,7 @@
 <%
 
    String DRV = "org.mariadb.jdbc.Driver";
-   String URL = "jdbc:mariadb://bigdata.cnuqv3vtwjri.ap-northeast-2.rds.amazonaws.com:3306/playground";
+   String URL = "";
    String USR = "playground";
    String PWD = "bigdata2020";
 
