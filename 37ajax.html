@@ -272,8 +272,9 @@ RESTful API => REACT, vue.js
                         txt = document.createTextNode('');
                     }
                     else if (list.trim() == '') continue;
-                    else opt = document.createElement('option');
+                    else txt = document.createTextNode(list.trim());
 
+                    opt = document.createElement('option');
                     txt = document.createTextNode(list);
                     opt.appendChild(txt);
                     gugun.appendChild(opt);
@@ -284,6 +285,8 @@ RESTful API => REACT, vue.js
                 }
 
             }
+
+
 
             // 3. 선택한 시도, 구군으로 동을 검색해서 비동기로 처리함 (dong.jsp)
             // sql:
